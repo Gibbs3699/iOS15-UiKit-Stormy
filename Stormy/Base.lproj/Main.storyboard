@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Stormy Detail-->
+        <!--View Controller-->
         <scene sceneID="ELS-X8-BKz">
             <objects>
                 <tableViewController id="qwn-yt-4lS" customClass="ViewController" customModule="Stormy" customModuleProvider="target" sceneMemberID="viewController">
@@ -40,7 +40,7 @@
                             <outlet property="delegate" destination="qwn-yt-4lS" id="qJH-2d-NLx"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Stormy Detail" id="ZJ2-if-WxE"/>
+                    <navigationItem key="navigationItem" id="ZJ2-if-WxE"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u35-8r-bbf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -54,7 +54,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="236-8d-Uuy">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="236-8d-Uuy">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                         </subviews>
