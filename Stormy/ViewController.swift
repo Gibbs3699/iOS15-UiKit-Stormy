@@ -27,7 +27,6 @@ class ViewController: UITableViewController {
         
         print(pictures)
         
-        title = "Stormy Viewer"
         navigationController?.navigationBar.prefersLargeTitles = true
     }
 
@@ -38,8 +37,9 @@ class ViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Picture", for: indexPath)
-        
-        cell.textLabel?.text = pictures[indexPath.row]
+         
+        let pictureSorted = pictures.sorted()
+        cell.textLabel?.text = pictureSorted[indexPath.row]
         
         return cell
     }
@@ -49,6 +49,9 @@ class ViewController: UITableViewController {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
             
             vc.selectedImage = pictures[indexPath.row]
+            vc.selectedPictureNumber = indexPath.row + 1
+            vc.totalPictures = pictures.count
+            
             navigationController?.pushViewController(vc, animated: true)
         }
         
